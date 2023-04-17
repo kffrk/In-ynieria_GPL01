@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.96" multi-file="no" uid="simp136f8b5e47474e8095682154c2c2cad7">
+  <meta>
+    <name>Diagram stanów</name>
+    <authors>Michał Kawa</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="initial-state" type="Initial State" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="initial-state" type="Initial State" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="general-transition" type="Transition" />
+        <value>13</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlStateMachineDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-84c1f0f312aa483988d4b3f4fe666ba1" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Michał</first-name>
+        <last-name>Kawa</last-name>
+        <role />
+        <e-mail>w64101@student.wsiz.edu.pl</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-dd8b3ec3a7cf40db8f99a7b3011e28a1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pda3e0ac4a9084abfa9b4e11aceac467b_604526761" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/03/2023 13:53:15</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-statechart" id="pfe6b669a679443099953f26330aae274_588043114" name="Diagram stanów" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/03/2023 13:53:31</creation-date>
+          <change-date>04/03/2023 14:11:04</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="a87ba5cd33834243851ac2a93e1e914d" cid="ELEM002" type="general-transition" creator="" creation-date="04/03/2023 13:56:30" from="1419f09bc11a488cb7f3eef781eb7176" to="4c599598b61448998f528c508ecae443" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="f80d51ec7a1c4367b756cc798bd9ea8f" cid="ELEM010" type="general-transition" creator="" creation-date="04/03/2023 14:07:48" from="26410c41aa434d53a804c55221f56b82" to="4c599598b61448998f528c508ecae443" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="1419f09bc11a488cb7f3eef781eb7176" cid="ST001" type="state" name="Bezczynny" creator="" creation-date="04/03/2023 13:54:17">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="7829420daac04ca5a67db8b68a37027a" cid="ELEM001" type="general-transition" creator="" creation-date="04/03/2023 13:54:43" from="c98162d1fc1b42a3b5009cca2ab85e0f" to="1419f09bc11a488cb7f3eef781eb7176" visibility="package">
+            <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="b797b23a7bb046e6828b3be3bc295fd5" cid="ELEM008" type="general-transition" creator="" creation-date="04/03/2023 14:05:25" from="26410c41aa434d53a804c55221f56b82" to="1419f09bc11a488cb7f3eef781eb7176" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>setTempLow &lt; currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="82042d7606a648d2bf82c78fecf8160b" cid="ELEM012" type="general-transition" creator="" creation-date="04/03/2023 14:11:04" from="1419f09bc11a488cb7f3eef781eb7176" to="1419f09bc11a488cb7f3eef781eb7176" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>getCurrentTemp</trigger>
+            </transition>
+          </item>
+          <item id="4c599598b61448998f528c508ecae443" cid="ST002" type="state" name="Chłodzi" creator="" creation-date="04/03/2023 13:54:23">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="7ab97b3d97f84658bdc5a14215775ca8" cid="ELEM004" type="general-transition" creator="" creation-date="04/03/2023 14:00:10" from="4c599598b61448998f528c508ecae443" to="4c599598b61448998f528c508ecae443" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>getCurrentTemp</trigger>
+            </transition>
+          </item>
+          <item id="c98162d1fc1b42a3b5009cca2ab85e0f" cid="IS001" type="initial-state" name="Stan początkowy" creator="" creation-date="04/03/2023 13:53:56" />
+          <item id="26410c41aa434d53a804c55221f56b82" cid="ST003" type="state" name="Grzeje" creator="" creation-date="04/03/2023 13:54:27">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="d6094daa590d4ced9a48d989fd6c040b" cid="ELEM009" type="general-transition" creator="" creation-date="04/03/2023 14:06:55" from="4c599598b61448998f528c508ecae443" to="1419f09bc11a488cb7f3eef781eb7176" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>setTempLow &lt; currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="6ed2be2914ba4764b894d148e473f1a0" cid="ELEM011" type="general-transition" creator="" creation-date="04/03/2023 14:08:17" from="4c599598b61448998f528c508ecae443" to="26410c41aa434d53a804c55221f56b82" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &lt; setTempLow</trigger>
+            </transition>
+          </item>
+          <item id="dba4bc2665074814a69965d12466e27b" cid="ELEM005" type="general-transition" creator="" creation-date="04/03/2023 14:02:12" from="1419f09bc11a488cb7f3eef781eb7176" to="26410c41aa434d53a804c55221f56b82" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &lt; setTempLow</trigger>
+            </transition>
+          </item>
+          <item id="55c21cbe73ca453fa8345823f1f54d31" cid="ELEM007" type="general-transition" creator="" creation-date="04/03/2023 14:02:45" from="26410c41aa434d53a804c55221f56b82" to="26410c41aa434d53a804c55221f56b82" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>getCurrentTemp</trigger>
+            </transition>
+          </item>
+        </abstract-items>
+        <layer id="b53a3a1591e14ec192089b402a2f0a67" name="Default" visible="true" enabled="true" locked="false">
+          <item id="c98162d1fc1b42a3b5009cca2ab85e0f" iid="a78aa6d827b94ea1aa89dab329e88b9d" creation-date="04/03/2023 13:53:56" order-index="0" type="entity">
+            <layout name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" ax="448" ay="161" awidth="44" aheight="44" x="448" y="161" width="76" height="44" rotation-center="-9.5,-9.5" />
+          </item>
+          <item id="1419f09bc11a488cb7f3eef781eb7176" iid="25a6cb86a6834e2dab8677cb71cefd56" creation-date="04/03/2023 13:54:17" order-index="1" type="entity">
+            <layout ax="420" ay="306" awidth="100" aheight="44" x="420" y="306" width="100" height="50" expanded="420,306,100,44" collapsed="0,0,0,0" />
+          </item>
+          <item id="4c599598b61448998f528c508ecae443" iid="17cfcaed5d8441f082e13c2c54cfb0b0" creation-date="04/03/2023 13:54:23" order-index="2" type="entity">
+            <layout ax="841" ay="670" awidth="100" aheight="44" x="841" y="670" width="100" height="50" expanded="675,554,100,44" collapsed="0,0,0,0" />
+          </item>
+          <item id="26410c41aa434d53a804c55221f56b82" iid="0fde496412a141808f26c863f38d1fdd" creation-date="04/03/2023 13:54:27" order-index="3" type="entity">
+            <layout ax="836" ay="161" awidth="100" aheight="44" x="836" y="161" width="100" height="50" expanded="671,161,100,44" collapsed="0,0,0,0" />
+          </item>
+          <item id="7829420daac04ca5a67db8b68a37027a" iid="1528e6f99f8045c79c9271be28a27332" creation-date="04/03/2023 13:54:43" order-index="4" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="470" y1="205" x2="470" y2="306" start-border-pos="0.625" end-border-pos="0.125" name-position="0,20">
+              <points>
+                <point x="470" y="205" />
+                <point x="470" y="306" />
+              </points>
+            </layout>
+            <relation from="c98162d1fc1b42a3b5009cca2ab85e0f" from-iid="a78aa6d827b94ea1aa89dab329e88b9d" to="1419f09bc11a488cb7f3eef781eb7176" to-iid="25a6cb86a6834e2dab8677cb71cefd56" />
+          </item>
+          <item id="a87ba5cd33834243851ac2a93e1e914d" iid="c94ef1eecec545aa86364bdef4181153" creation-date="04/03/2023 13:56:30" order-index="5" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="470" y1="350" x2="841" y2="692" start-border-pos="0.62469612121582" end-border-pos="0.876355951482599" name-position="37,23" name-width="219">
+              <points>
+                <point x="470" y="350" />
+                <point x="472" y="690" />
+                <point x="841" y="692" />
+              </points>
+            </layout>
+            <relation from="1419f09bc11a488cb7f3eef781eb7176" from-iid="25a6cb86a6834e2dab8677cb71cefd56" to="4c599598b61448998f528c508ecae443" to-iid="17cfcaed5d8441f082e13c2c54cfb0b0" />
+          </item>
+          <item id="7ab97b3d97f84658bdc5a14215775ca8" iid="dcc10ea1267b4defae8674f2f88c11bd" creation-date="04/03/2023 14:00:10" order-index="6" type="relation">
+            <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="891" y1="714" x2="941" y2="692" start-border-pos="0.625" end-border-pos="0.375" start-local-pos="50" end-local-pos="22" name-position="-54,-23" name-width="135">
+              <points>
+                <point x="891" y="714" />
+                <point x="891" y="772" />
+                <point x="1028" y="772" />
+                <point x="1028" y="693" />
+                <point x="941" y="692" />
+              </points>
+            </layout>
+            <relation from="4c599598b61448998f528c508ecae443" from-iid="17cfcaed5d8441f082e13c2c54cfb0b0" to="4c599598b61448998f528c508ecae443" to-iid="17cfcaed5d8441f082e13c2c54cfb0b0" />
+          </item>
+          <item id="dba4bc2665074814a69965d12466e27b" iid="9dae3354214c4a71adcf8c6e1d845505" creation-date="04/03/2023 14:02:12" order-index="7" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="488" y1="306" x2="836" y2="183" start-border-pos="0.170451354980469" end-border-pos="0.874043464660645" name-position="66,-22">
+              <points>
+                <point x="488" y="306" />
+                <point x="589" y="184" />
+                <point x="836" y="183" />
+              </points>
+            </layout>
+            <relation from="1419f09bc11a488cb7f3eef781eb7176" from-iid="25a6cb86a6834e2dab8677cb71cefd56" to="26410c41aa434d53a804c55221f56b82" to-iid="0fde496412a141808f26c863f38d1fdd" />
+          </item>
+          <item id="55c21cbe73ca453fa8345823f1f54d31" iid="3e9225aa93bf4584a5a05e980b3c5773" creation-date="04/03/2023 14:02:45" order-index="8" type="relation">
+            <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="936" y1="183" x2="886" y2="161" start-border-pos="0.375" end-border-pos="0.125" start-local-pos="22" end-local-pos="50" name-position="-40,-18" name-width="129">
+              <points>
+                <point x="936" y="183" />
+                <point x="996" y="183" />
+                <point x="996" y="100" />
+                <point x="886" y="100" />
+                <point x="886" y="161" />
+              </points>
+            </layout>
+            <relation from="26410c41aa434d53a804c55221f56b82" from-iid="0fde496412a141808f26c863f38d1fdd" to="26410c41aa434d53a804c55221f56b82" to-iid="0fde496412a141808f26c863f38d1fdd" />
+          </item>
+          <item id="b797b23a7bb046e6828b3be3bc295fd5" iid="b2aac99b09f04aeb98265ffdcb0d41c9" creation-date="04/03/2023 14:05:25" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="836" y1="183" x2="520" y2="328" start-border-pos="0.875" end-border-pos="0.375" start-local-pos="22" end-local-pos="22" name-position="-59,-28" name-width="217">
+              <points>
+                <point x="836" y="183" />
+                <point x="789" y="325" />
+                <point x="520" y="328" />
+              </points>
+            </layout>
+            <relation from="26410c41aa434d53a804c55221f56b82" from-iid="0fde496412a141808f26c863f38d1fdd" to="1419f09bc11a488cb7f3eef781eb7176" to-iid="25a6cb86a6834e2dab8677cb71cefd56" />
+          </item>
+          <item id="d6094daa590d4ced9a48d989fd6c040b" iid="42635544c8714f8983226582314e81ed" creation-date="04/03/2023 14:06:55" order-index="10" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="866" y1="670" x2="495" y2="350" start-border-pos="0.0613873291015625" end-border-pos="0.561387329101563" name-position="-41,19" name-width="218">
+              <points>
+                <point x="866" y="670" />
+                <point x="495" y="350" />
+              </points>
+            </layout>
+            <relation from="4c599598b61448998f528c508ecae443" from-iid="17cfcaed5d8441f082e13c2c54cfb0b0" to="1419f09bc11a488cb7f3eef781eb7176" to-iid="25a6cb86a6834e2dab8677cb71cefd56" />
+          </item>
+          <item id="f80d51ec7a1c4367b756cc798bd9ea8f" iid="9c3fce2fab8c4217b9db8c4c7709a3db" creation-date="04/03/2023 14:07:48" order-index="11" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="873" y1="205" x2="879" y2="670" start-border-pos="0.657366180419922" end-border-pos="0.0943984985351563" name-position="0,20">
+              <points>
+                <point x="873" y="205" />
+                <point x="743" y="426" />
+                <point x="879" y="670" />
+              </points>
+            </layout>
+            <relation from="26410c41aa434d53a804c55221f56b82" from-iid="0fde496412a141808f26c863f38d1fdd" to="4c599598b61448998f528c508ecae443" to-iid="17cfcaed5d8441f082e13c2c54cfb0b0" />
+          </item>
+          <item id="6ed2be2914ba4764b894d148e473f1a0" iid="799de2e322394e4d810798cbd7f2831c" creation-date="04/03/2023 14:08:17" order-index="12" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="902" y1="670" x2="898" y2="205" start-border-pos="0.153339691162109" end-border-pos="0.593825988769531" name-position="0,20">
+              <points>
+                <point x="902" y="670" />
+                <point x="1026" y="430" />
+                <point x="898" y="205" />
+              </points>
+            </layout>
+            <relation from="4c599598b61448998f528c508ecae443" from-iid="17cfcaed5d8441f082e13c2c54cfb0b0" to="26410c41aa434d53a804c55221f56b82" to-iid="0fde496412a141808f26c863f38d1fdd" />
+          </item>
+          <item id="82042d7606a648d2bf82c78fecf8160b" iid="65397063b28b4e4c9dc2bd39f2809b84" creation-date="04/03/2023 14:11:04" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="420" y1="306" x2="420" y2="350" start-border-pos="0" end-border-pos="0.75" start-local-pos="0" end-local-pos="44" name-position="-4,-47">
+              <points>
+                <point x="420" y="306" />
+                <point x="350" y="306" />
+                <point x="350" y="350" />
+                <point x="420" y="350" />
+              </points>
+            </layout>
+            <relation from="1419f09bc11a488cb7f3eef781eb7176" from-iid="25a6cb86a6834e2dab8677cb71cefd56" to="1419f09bc11a488cb7f3eef781eb7176" to-iid="25a6cb86a6834e2dab8677cb71cefd56" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
